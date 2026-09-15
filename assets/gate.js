@@ -18,7 +18,7 @@
 // 아니라 "진도보다 앞서 훑어보기"를 막는 용도다. 정말 감춰야 할 내용은
 // 애초에 이 저장소에 올리지 않는 편이 맞다.
 (function () {
-  var KEY_HASH = 0xce215c56;         // 열람키의 해시 (평문은 코드에 두지 않는다)
+  var KEY_HASH = 0x180473ef;;         // 열람키의 해시 (평문은 코드에 두지 않는다)
   var STORE = 'dsdg_teacher_v1';
 
   function hash(s) {
