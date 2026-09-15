@@ -195,7 +195,7 @@
     <div class="body"><pre class="mini"><span style="color:#3ba6a0;text-decoration:underline">https://open.neis.go.kr/hub/mealServiceDietInfo</span>   <span style="color:#9b8c66">← 어디에 — 요청 주소</span>
 <span style="color:#e45756">?KEY=발급받은_인증키</span>                            <span style="color:#9b8c66">← 인증키 — Secrets 설정에서 꺼내 붙인다</span>
 <span style="color:#f4b400">&amp;Type=json</span>                                    <span style="color:#9b8c66">← 응답 형식</span>
-<span style="color:#54a24b">&amp;ATPT_OFCDC_SC_CODE=B10&amp;SD_SCHUL_CODE=7010073</span> <span style="color:#9b8c66">← 조건 — 교육청·학교</span>
+<span style="color:#54a24b">&amp;ATPT_OFCDC_SC_CODE=B10&amp;SD_SCHUL_CODE=7010077</span> <span style="color:#9b8c66">← 조건 — 교육청·학교</span>
 <span style="color:#e8930c">&amp;MLSV_FROM_YMD=20250901&amp;MLSV_TO_YMD=20260930</span>  <span style="color:#9b8c66">← 조건 — 2025년 9월~2026년 9월</span>
 <span style="color:#e8930c">&amp;pSize=1000</span>                                   <span style="color:#9b8c66">← 한 번에 받을 행 수</span></pre></div>
     <div class="note">인증키는 Secrets 설정에서 읽어 KEY 항목으로 전달합니다. pSize는 한 번에 요청할 행 수이고 상한은 1000입니다. 키가 없으면 pSize와 pIndex가 무시되어 언제나 첫 5건만 온다(실측). 전체 건수가 pSize보다 많을 때만 다음 쪽을 이어서 요청합니다.</div>
@@ -519,7 +519,7 @@ def load_lunch(frm, to, api_key):
             params={
                 "Type": "json", "KEY": api_key,
                 "pSize": 1000, "pIndex": page,
-                "ATPT_OFCDC_SC_CODE": "B10", "SD_SCHUL_CODE": "7010073",
+                "ATPT_OFCDC_SC_CODE": "B10", "SD_SCHUL_CODE": "7010077",
                 "MMEAL_SC_CODE": "2", "MLSV_FROM_YMD": frm, "MLSV_TO_YMD": to,
             }, timeout=20,
         )
