@@ -99,7 +99,7 @@
     <div class="body"><pre class="mini"><span style="color:#3ba6a0;text-decoration:underline">https://open.neis.go.kr/hub/mealServiceDietInfo</span>   <span style="color:#9b8c66">← 어디에 — 요청 주소</span>
 <span style="color:#f4b400">?Type=json</span>                                        <span style="color:#9b8c66">← 응답 형식 — 이 줄이 빠지면 XML로 온다</span>
 <span style="color:#54a24b">&amp;ATPT_OFCDC_SC_CODE=B10</span>                           <span style="color:#9b8c66">← 조건 — 교육청(서울)</span>
-<span style="color:#54a24b">&amp;SD_SCHUL_CODE=7010073</span>                            <span style="color:#9b8c66">← 조건 — 학교(면목고)</span>
+<span style="color:#54a24b">&amp;SD_SCHUL_CODE=7010077</span>                            <span style="color:#9b8c66">← 조건 — 학교(면목고)</span>
 <span style="color:#54a24b">&amp;MMEAL_SC_CODE=2</span>                                  <span style="color:#9b8c66">← 조건 — 식사(중식)</span>
 <span style="color:#e8930c">&amp;MLSV_FROM_YMD=20260602&amp;MLSV_TO_YMD=20260602</span>      <span style="color:#9b8c66">← 조건 — 기간(하이픈 없는 여덟 자리)</span>
 <span style="color:#e8930c">&amp;MLSV_YMD=20260907</span>                                <span style="color:#9b8c66">← 하루만 볼 때는 위 두 줄 대신 이 한 줄</span></pre></div>
@@ -113,10 +113,9 @@
         {
           "SCHUL_NM": "면목고등학교",
           "MLSV_YMD": "20260602",
-          "DDISH_NM": "친환경현미밥 &lt;br/&gt;오징어무국 (5.6.13.17)&lt;br/&gt;두부조림 (5.6.13)&lt;br/&gt;
-                       찜닭(당면) (5.6.13.15)&lt;br/&gt;얼갈이무침 &lt;br/&gt;배추김치 (9)&lt;br/&gt;초코맛아이스크림 (2)",
-          "CAL_INFO": "941.7 Kcal",
-          "ORPLC_INFO": "닭고기 : 국내산 ..."
+          "DDISH_NM": "기장밥 &lt;br/&gt;얼큰무채국 (5.6)&lt;br/&gt;미나리무침 (5.6.13)&lt;br/&gt;닭카레볶음 (2.5.6.10.12.13.15.16)&lt;br/&gt;소떡소떡 (5.6.12.13)&lt;br/&gt;배추김치 (9)",
+          "CAL_INFO": "1092.3 Kcal",
+          "ORPLC_INFO": "쇠고기(종류) : 국내산(한우) &lt;br/&gt;..."
         }
     ] }
   ]
@@ -161,8 +160,8 @@
       <rect x="630" y="200" width="130" height="34" fill="#ffffff" stroke="#f0e2bc"/>
       <rect x="760" y="200" width="90" height="34" fill="#ffffff" stroke="#f0e2bc"/>
       <text x="575" y="221" text-anchor="middle" font-size="11.5" fill="#2b2d3a" font-family="monospace">20260602</text>
-      <text x="695" y="221" text-anchor="middle" font-size="11.5" fill="#2b2d3a" font-family="monospace">친환경현미밥 …</text>
-      <text x="805" y="221" text-anchor="middle" font-size="11.5" fill="#2b2d3a" font-family="monospace">"941.7 Kcal"</text>
+      <text x="695" y="221" text-anchor="middle" font-size="11.5" fill="#2b2d3a" font-family="monospace">기장밥 …</text>
+      <text x="805" y="221" text-anchor="middle" font-size="11.5" fill="#2b2d3a" font-family="monospace">"1092.3 Kcal"</text>
       <!-- 하단 캡션 -->
       <text x="430" y="384" text-anchor="middle" font-size="12.5" fill="#7a7f95">row의 상자 하나가 표의 행 하나가 된다 — "필요한 경우 표 형태로도 쉽게 변환할 수 있다"(교과서 20쪽)의 실제 모습.</text>
     </svg>
@@ -196,7 +195,7 @@
     <div class="body"><pre class="mini"><span style="color:#3ba6a0;text-decoration:underline">https://open.neis.go.kr/hub/mealServiceDietInfo</span>   <span style="color:#9b8c66">← 어디에 — 요청 주소</span>
 <span style="color:#e45756">?KEY=발급받은_인증키</span>                            <span style="color:#9b8c66">← 인증키 — 비밀 금고에서 꺼내 붙인다</span>
 <span style="color:#f4b400">&amp;Type=json</span>                                    <span style="color:#9b8c66">← 응답 형식</span>
-<span style="color:#54a24b">&amp;ATPT_OFCDC_SC_CODE=B10&amp;SD_SCHUL_CODE=7010073</span> <span style="color:#9b8c66">← 조건 — 교육청·학교</span>
+<span style="color:#54a24b">&amp;ATPT_OFCDC_SC_CODE=B10&amp;SD_SCHUL_CODE=7010077</span> <span style="color:#9b8c66">← 조건 — 교육청·학교</span>
 <span style="color:#e8930c">&amp;MLSV_FROM_YMD=20250901&amp;MLSV_TO_YMD=20260930</span>  <span style="color:#9b8c66">← 조건 — 두 학기 전체</span>
 <span style="color:#e8930c">&amp;pSize=1000</span>                                   <span style="color:#9b8c66">← 한 번에 받을 행 수</span></pre></div>
     <div class="note">2차시 KOBIS에서 key를 붙였던 것과 같은 모양이다. 항목 이름과 붙는 자리만 API마다 다르다. 키 없이 같은 기간을 물으면 전체 184건이라고 알려 주면서 목록에는 5건만 오고, pSize도 무시된다(실측). 키를 붙이면 184행이 한 번에 온다.</div>
@@ -438,7 +437,7 @@ url = "https://open.neis.go.kr/hub/mealServiceDietInfo"
 params = {
     "Type": "json",                # 응답을 JSON으로
     "ATPT_OFCDC_SC_CODE": "B10",   # 서울시교육청
-    "SD_SCHUL_CODE": "7010073",    # 면목고등학교
+    "SD_SCHUL_CODE": "7010077",    # 면목고등학교
     "MMEAL_SC_CODE": "2",          # 중식
     "MLSV_FROM_YMD": ymd,
     "MLSV_TO_YMD": ymd,
@@ -501,7 +500,7 @@ def load_lunch(frm, to):
             "KEY": st.secrets["NEIS_API_KEY"],   # 인증키 — 비밀 금고에서 꺼낸다
             "pSize": 1000,                       # 한 번에 받을 행 수 (키가 있어야 듣는다)
             "ATPT_OFCDC_SC_CODE": "B10",         # 서울시교육청
-            "SD_SCHUL_CODE": "7010073",          # 면목고등학교
+            "SD_SCHUL_CODE": "7010077",          # 면목고등학교
             "MMEAL_SC_CODE": "2",                # 중식만
             "MLSV_FROM_YMD": frm,
             "MLSV_TO_YMD": to,
