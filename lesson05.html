@@ -96,13 +96,13 @@
     <div class="body"><pre class="mini"><span style="color:#3ba6a0;text-decoration:underline">https://open.neis.go.kr/hub/mealServiceDietInfo</span>   <span style="color:#9b8c66">← 어디에 — 요청 주소</span>
 <span style="color:#f4b400">?Type=json</span>                                        <span style="color:#9b8c66">← 응답 형식 — 이 줄이 빠지면 XML로 온다</span>
 <span style="color:#54a24b">&amp;ATPT_OFCDC_SC_CODE=B10</span>                           <span style="color:#9b8c66">← 조건 — 교육청(서울)</span>
-<span style="color:#54a24b">&amp;SD_SCHUL_CODE=7010073</span>                            <span style="color:#9b8c66">← 조건 — 학교(당곡고)</span>
+<span style="color:#54a24b">&amp;SD_SCHUL_CODE=7010077</span>                            <span style="color:#9b8c66">← 조건 — 학교(당곡고)</span>
 <span style="color:#54a24b">&amp;MMEAL_SC_CODE=2</span>                                  <span style="color:#9b8c66">← 조건 — 식사(중식)</span>
 <span style="color:#e8930c">&amp;MLSV_FROM_YMD=20260602&amp;MLSV_TO_YMD=20260602</span>      <span style="color:#9b8c66">← 조건 — 기간(하이픈 없는 여덟 자리)</span>
 <span style="color:#e8930c">&amp;MLSV_YMD=20260602</span>                                <span style="color:#9b8c66">← 하루 조회 시 위 기간 조건 대신 사용</span></pre></div>
     <div class="note">요청 주소와 조건은 2차시 KOBIS와 같은 구조인데, 인증키만 없다. 날짜 값을 바꾸면 응답이 그 날짜 것으로 바뀐다.</div>
   </div>
-  <p><a href="https://open.neis.go.kr/hub/mealServiceDietInfo?ATPT_OFCDC_SC_CODE=B10&amp;SD_SCHUL_CODE=7010073&amp;MMEAL_SC_CODE=2&amp;MLSV_YMD=20260602&amp;Type=json" target="_blank" rel="noopener">당곡고등학교 2026년 6월 2일 중식 응답 열기</a>를 눌러 아래 예시와 비교합니다. <code>Type=json</code>은 JSON 형식으로 응답해 달라는 지정입니다. 이를 생략하면 XML 형식으로 응답합니다. 실제 응답은 등록 정보의 수정에 따라 달라질 수 있습니다.</p>
+  <p><a href="https://open.neis.go.kr/hub/mealServiceDietInfo?ATPT_OFCDC_SC_CODE=B10&amp;SD_SCHUL_CODE=7010077&amp;MMEAL_SC_CODE=2&amp;MLSV_YMD=20260602&amp;Type=json" target="_blank" rel="noopener">당곡고등학교 2026년 6월 2일 중식 응답 열기</a>를 눌러 아래 예시와 비교합니다. <code>Type=json</code>은 JSON 형식으로 응답해 달라는 지정입니다. 이를 생략하면 XML 형식으로 응답합니다. 실제 응답은 등록 정보의 수정에 따라 달라질 수 있습니다.</p>
   <div class="codewrap code"><span class="label">실제 응답 (일부 발췌 · 2026-06-02)</span><pre>{
   "mealServiceDietInfo": [
     { "head": [ { "list_total_count": 1 } ] },
